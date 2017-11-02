@@ -1,0 +1,89 @@
+#singlebit {
+	height: 60px;
+	background: none;
+	position: absolute;
+	top: 0.3vh;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: auto;
+	font-family: "Paralucent",sans-serif;
+	font-size:13vh;
+	color: rgba(0,0,0,0);
+	z-index: 1;
+	-webkit-text-stroke: 1.1px hsl(0, 0%, 70%);
+}
+#singlebit2 {
+	height: 60px;
+	background: none;
+	position: absolute;
+	bottom: 2.6vh;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: auto;
+	font-family: "Paralucent",sans-serif;
+	font-size:13vh;
+	color: rgba(0,0,0,0);
+	z-index: 1;
+	-webkit-text-stroke: 1.1px hsl(0, 0%, 70%);
+}
+html {
+	  cursor: none;
+	  background-color: black;
+	  overflow:hidden;
+}
+
+#pointer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	height: 12vh;
+}
+
+
+canvas {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+
+
+
+}
+
+#stream {
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	width: 200px;
+	height:800px;
+	z-index: 3000;
+/*	background-color: red;
+*/  overflow-x:hidden;
+    overflow-y:hidden;
+    font-size:1em;
+	color:hsl(0, 0%, 70%);
+	font-family: "Paralucent",sans-serif;
+	font-weight: lighter;
+
+}
+
+#stream2 {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	width: 100px;
+	height:800px;
+	z-index: 3001;
+	text-align: right;
+/*	background-color: red;
+*/  overflow-x:hidden;
+    overflow-y:hidden;
+    font-size:1em;
+	color: hsl(0, 0%, 70%);
+	font-family: "Paralucent",sans-serif;
+	font-weight: lighter;
+	line-height: 1em;
+
+}
