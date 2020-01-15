@@ -1,7 +1,8 @@
+// Code Inspiration: https://youtu.be/17WoOqgXsRM
+
 var song;
 var analyzer;
 var mic
-// Code for: https://youtu.be/17WoOqgXsRM
 var stars = [];
 var speed;
 var bool = false;
@@ -34,10 +35,8 @@ var img;
 
 function setup() {
   createCanvas(1600,900);
-  // background(0);
 
   noCursor();
-
   //song
     mic = new p5.AudioIn()
     mic.start();
@@ -49,13 +48,11 @@ function draw() {
   alt_mouseX = mouseX;
   alt_mouseY = mouseY;
 
-  background('rgba(0,0,255,0.00)');
   speed = map(alt_mouseY, 0, height, 0, 20);
   translate(width/2 , height/2);
-  xval = map (alt_mouseX,38,1575,-1,1);
-  yval = map (alt_mouseY,4,875,1,-1);
-  rotation = map((xval * yval),-1,1,-55,55);
-
+  xval = map (alt_mouseX, 38, 1575, -1, 1);
+  yval = map (alt_mouseY, 4, 875, 1, -1);
+  rotation = map((xval * yval), -1, 1, -55, 55);
 
 
 
@@ -70,15 +67,11 @@ function draw() {
 
   // song
   var rms = (mic.getLevel()/0.2);
-  console.log((mic.getLevel()))
   fill(127);
   stroke(0);
 
-  // Draw an ellipse with size based on volume
-  // ellipse(0, 0, 10+rms*100, 10+rms*100);
+  // Draw an ellipse with brightness based on volume
   brightness = round(map (rms,0,1,100,255));
-  //console.log(brightness);
-
 
 }
 
@@ -142,8 +135,9 @@ document.addEventListener('mousemove',function(event){
 },true);
 
 //marktwaarde omrekenen
+console.log(marktwaarde);
 
-$.getJSON('http://api.coindesk.com/v1/bpi/currentprice.json',
+$.getJSON('https://api.coindesk.com/v1/bpi/currentprice.json',
     function(data) {
         // Continuously update stream with data
         var body = '';

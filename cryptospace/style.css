@@ -1,3 +1,15 @@
+html {
+	  cursor: none;
+	  background-color: black;
+	  overflow: hidden;
+}
+
+canvas {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
 #singlebit {
 	height: 60px;
 	background: none;
@@ -28,11 +40,6 @@
 	z-index: 1;
 	-webkit-text-stroke: 1.1px hsl(0, 0%, 70%);
 }
-html {
-	  cursor: none;
-	  background-color: black;
-	  overflow:hidden;
-}
 
 #pointer {
 	position: fixed;
@@ -42,15 +49,6 @@ html {
 	height: 12vh;
 }
 
-
-canvas {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-
-
-
-}
 
 #stream {
 	position: absolute;
